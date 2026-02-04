@@ -1,8 +1,8 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = "TerraformDemo"
-    storage_account_name = "terraformcodeops"
-    container_name       = "tfstatefile"
+    resource_group_name  = "CICD-Pipeline"
+    storage_account_name = "terraformcicdpipeline"
+    container_name       = "tfcode"
     key                  = "dev.terraform.tfstate"
   }
 }
